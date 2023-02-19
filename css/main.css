@@ -1,49 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Paytone+One&display=swap");
+@import url("../css/utilities.css");
 
 * {
     margin: 0;
     padding: 0;
-    font-family: "Brice" !important;
+    font-family: Helvetica !important;
 }
 :root {
-    --color-yellow: #f7b715;
+    --color-yellow: #ffbc38;
     --color-red: #e94058;
-    --color-space: #001736;
+    --color-space: #000f32;
     --color-blue: #00b2e2;
-}
-
-/* Titles */
-.title {
-    font-size: 18px;
-    font-weight: bold;
-    font-style: normal;
-}
-.title--medium {
-    font-size: 24px;
-}
-.title--big {
-    font-size: 30px;
-}
-.title--black {
-    color: black;
-}
-.title--space {
-    color: var(--color-space);
-}
-.title--white {
-    color: white;
-}
-.title--bold {
-    font-weight: bold;
-}
-
-/* Colores */
-/* Background */
-.bg-yellow {
-    background-color: var(--color-yellow);
-}
-.bg-space {
-    background-color: var(--color-space);
 }
 
 /* Fonts */
@@ -51,69 +19,123 @@
     font-family: "Poppins" !important;
 }
 
+.container {
+    max-width: 1760px;
+}
+
+.landing__title {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: "Paytone One", sans-serif !important;
+}
+
 .landing-header {
-    background-color: var(--color-space);
-}
-.landing__nav-item {
-    color: #fff;
-    font-size: 18px;
-    font-family: "Poppins" !important;
-    font-style: normal;
-}
-.landing__nav-item.active {
-    color: var(--color-yellow) !important;
-}
-.backgound__image {
-    position: absolute;
-    top: 0px;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 1;
-}
-/* Carousel */
-.carousel-control-prev,
-.carousel-control-next {
-    width: 50px;
-    height: 50px;
-    top: calc(50% - 25px);
-    border-radius: 125px;
-    background: var(--color-space);
-}
-
-/* reeels flower */
-.reels-flowers {
-    height: 100px;
-    width: 100%;
-    background-image: url("../images/cañahuate.png");
-    background-size: contain;
-    background-repeat: space;
-}
-
-/* counter */
-.landing__counter {
-    display: flex;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
-    height: auto;
-}
-.landing__counter__wraper {
+    background-color: var(--color-yellow);
+    padding: 16px;
+    box-shadow: 0px 3px 6px #00000064;
     position: relative;
     z-index: 2;
 }
-.counter__timer {
+.landing__nav-item {
+    color: #000;
+    font-size: 18px;
+    font-family: Helvetica !important;
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+}
+
+.landing__nav-item button {
+    font-weight: bold;
+    width: 308px;
+    height: 66px;
+    border-radius: 16px;
+}
+
+.landing__content-principal {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+}
+
+/* Main banner */
+.landing__main-banner {
+}
+
+/* Lineup */
+.landing__line-up {
+    width: 100%;
+    background-image: url("../images/lineup-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 60px;
+}
+
+.landing__line-up__wrapper {
+    min-height: 538px;
+    background-color: #fff;
+    padding: 35px;
+    border-radius: 28px;
+}
+
+.landing__line-up__item {
+    max-width: 402px;
+    width: 100%;
+    margin: auto;
+}
+
+.landing__line-up__title {
+    color: #000f32;
+    text-align: center;
+    margin-bottom: 86px;
+}
+
+.landing__line-up__subtitle {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: #00b0df;
+    margin-bottom: 27px;
+}
+.landing__line-up__text {
+    font-size: 25px;
+    color: #000f32;
+    text-align: center;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+/* Coundown */
+.landing__countdown {
+    padding: 80px 16px;
+}
+
+.landing__countdown__title {
+    color: #00b0df;
+    margin-bottom: 30px;
+}
+
+.landing__countdown__subtitle {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.landing__countdown__wrapper {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.landing__countdown__timer {
     display: flex;
-    background: #fff;
     border-radius: 10px;
     justify-content: center;
-    /* height: 160px; */
     width: 100%;
     max-width: 800px;
     margin: auto;
     align-items: center;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .simply-section div {
@@ -121,48 +143,108 @@
     padding: 16px;
     background: var(--color-space);
     color: #fff;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
     justify-content: center;
     align-items: center;
-    margin: 5px;
-    width: 60px;
+    width: 70px;
     height: 60px;
-    border-radius: 5px;
+    border-radius: 8px;
 }
 
-/* Video */
-.landing__welcome-video {
-    padding: 16px;
-    height: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.simply-section:not(:last-child) {
+    margin-right: 10px;
+}
+/* Memories */
+.landing__memories {
+    margin-bottom: 80px;
+    background: var(--color-yellow);
+}
+
+.landing__memories__title {
+    margin-bottom: 38px;
+    color: var(--color-space);
+}
+
+/* Socials */
+.landing__socials {
+    margin-bottom: 80px;
+}
+
+.landing__socials__about {
     position: relative;
-    overflow: hidden;
-}
-#welcome-video {
-    z-index: 2;
+    background: #00b0df;
+    border-radius: 20px;
+    padding: 70px;
+    height: 843px;
     width: 100%;
-    height: 200px;
 }
 
-/* Programación */
-.landing__programacion {
+.landing__socials__title {
+    font-weight: 300;
+    margin-bottom: 28px;
 }
 
-/* Imagen de relleno */
-.imagen-relleno {
-    height: 400px;
-    overflow: hidden;
-    background-image: url("../images/fondo-publico-2.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+.landing__socials__about p {
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.landing__socials__about img {
+    position: absolute;
+    bottom: 42px;
+    right: 10px;
+    max-width: 421px;
+    width: 100%;
+}
+
+/* Map */
+.landing__map__title {
+    color: var(--color-space);
+    font-weight: normal;
+    margin-bottom: 27px;
+}
+
+/* Contact */
+.landing__contact__wrapper {
+    background: var(--color-space);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    margin-top: 80px;
+}
+
+.landing__contact__title {
+    font-weight: normal;
+    line-height: 84px;
+    margin-bottom: 24px;
+}
+
+.landing__contact__button {
+    background: #fff;
+    border: 1px solid #707070;
+    border-radius: 20px;
+    padding: 18px;
+    color: var(--color-space);
+    text-align: center;
+    max-width: 1195px;
+    width: 100%;
+    margin-bottom: 64px;
+}
+
+.landing__contact__info {
+    font-size: 20px;
+    color: #fff;
+}
+.landing__contact__info i {
+    font-size: 30px;
+    margin-right: 10px;
 }
 
 /* Redes */
-.redes {
+.landing__float-redes {
     position: fixed;
     right: 0;
     height: 250px;
@@ -177,7 +259,8 @@
     border-bottom-left-radius: 10px;
     z-index: 10;
 }
-.redes > nav ul {
+
+.landing__float-redes > nav ul {
     padding: 0;
     margin: 10px 0;
     display: flex;
@@ -186,32 +269,60 @@
     align-items: center;
     font-size: 28px;
 }
-.redes > nav ul a {
+.landing__float-redes > nav ul a {
     color: var(--color-yellow);
 }
 
+/* Footer */
+.landing__footer {
+    background: var(--color-yellow);
+    padding: 77px 77px 60px 77px;
+}
+
+.landing__footer__nav {
+    margin-top: 80px;
+}
+.landing__footer__nav a {
+    color: #fff;
+    font-size: 60px;
+}
+
 @media (min-width: 578px) {
-    .title {
-        font-size: 24px;
-        margin: 16px 0;
-    }
-    .title--medium {
-        font-size: 30px;
-    }
-    .title--big {
-        font-size: 45px;
+    .landing__title {
+        font-size: 40px;
     }
     .landing__counter {
         height: 500px;
     }
-    .simply-section div {
-        font-size: 55px;
-        margin: 10px;
-        width: 178px;
-        height: 100px;
-    }
     #welcome-video {
         width: 1000px;
         height: 400px;
+    }
+}
+
+@media (min-width: 992px) {
+    .landing__title {
+        line-height: 84px;
+        font-size: 60px;
+    }
+    .landing-header {
+        margin-top: 50px;
+        border-radius: 16px;
+    }
+    .landing__nav-item {
+        font-size: 20px;
+    }
+    .landing__nav-item:not(:last-child) {
+        margin-right: 35px;
+    }
+    /* Countdown */
+    .simply-section div {
+        font-size: 30px;
+        width: 144px;
+        height: 115px;
+        border-radius: 20px;
+    }
+    .landing__countdown__title {
+        margin-bottom: 80px;
     }
 }

@@ -1,0 +1,45 @@
+/* Background */
+.bg-yellow {
+    background-color: var(--color-yellow);
+}
+.bg-space {
+    background-color: var(--color-space);
+}
+
+/* Titles */
+.title {
+    font-size: 18px;
+    font-weight: bold;
+    font-style: normal;
+}
+.title--medium {
+    font-size: 24px;
+}
+.title--big {
+    font-size: 30px;
+}
+.title--black {
+    color: black;
+}
+.title--space {
+    color: var(--color-space);
+}
+.title--white {
+    color: white;
+}
+.title--bold {
+    font-weight: bold;
+}
+
+@media (min-width: 578px) {
+    .title {
+        font-size: 24px;
+        margin: 16px 0;
+    }
+    .title--medium {
+        font-size: 30px;
+    }
+    .title--big {
+        font-size: 45px;
+    }
+}
