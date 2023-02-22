@@ -8,7 +8,9 @@
 
 /* Titles */
 .title {
-    font-size: 18px;
+    font-size: 25px;
+    font-family: "Paytone One", sans-serif !important;
+    text-transform: uppercase;
     font-weight: bold;
     font-style: normal;
 }
@@ -33,7 +35,7 @@
 
 @media (min-width: 578px) {
     .title {
-        font-size: 24px;
+        font-size: 40px;
         margin: 16px 0;
     }
     .title--medium {
@@ -41,5 +43,12 @@
     }
     .title--big {
         font-size: 45px;
+    }
+}
+
+@media (min-width: 992px) {
+    .title {
+        line-height: 84px;
+        font-size: 60px;
     }
 }

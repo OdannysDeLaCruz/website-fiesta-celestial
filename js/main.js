@@ -66,8 +66,22 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function setMemoriesSlider() {
         var splide = new Splide('.splide', {
-            perPage: 3,
-            rewind: true,
+            type: 'loop',
+            perMove: 1,
+            gap: '10%',
+            pagination: false,
+            mediaQuery: 'min',
+            breakpoints: {
+                480: {
+                    perPage: 1,
+                },
+                558: {
+                    perPage: 2,
+                },
+                992: {
+                    perPage: 3,
+                },
+            }
         });
 
         splide.mount();
