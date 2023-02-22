@@ -153,7 +153,7 @@
 }
 /* Memories */
 .landing__memories {
-    min-height: 400px;
+    min-height: 350px;
     margin-bottom: 80px;
     background: var(--color-yellow);
     padding: 40px 16px 70px;
@@ -164,21 +164,30 @@
     color: var(--color-space);
 }
 
-.landing__memories__list {
-    background: red;
+.landing__memories__track {
+    max-width: 1487px;
+    width: 100%;
+    margin: auto;
 }
-
 .landing__memories__item {
-    background-color: red;
-    height: 280px;
+    height: 173px;
     display: flex;
     justify-content: center;
+    border-radius: 20px;
+    overflow: hidden;
 }
 
 .landing__memories__arrow {
-    width: 40px;
+    width: 30px;
     background: none;
     opacity: 1;
+}
+
+.landing__memories__arrow.splide__arrow--prev {
+    left: -10px;
+}
+.landing__memories__arrow.splide__arrow--next {
+    right: -10px;
 }
 
 /* Socials */
@@ -342,8 +351,17 @@
         min-height: 550px;
         padding: 40px 16px 40px;
     }
+    .landing__memories__item {
+        height: 224px;
+    }
     .landing__memories__arrow {
-        width: 104px;
+        width: 80px;
+    }
+    .landing__memories__arrow.splide__arrow--prev {
+        left: 0px;
+    }
+    .landing__memories__arrow.splide__arrow--next {
+        right: 0px;
     }
     /* Countdown */
     .simply-section div {
