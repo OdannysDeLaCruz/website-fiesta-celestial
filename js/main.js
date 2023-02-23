@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function setSimplyCountdown({ timer, elementId, callback }) {
 
         const element = document.querySelector(`#${elementId}`)
-        if (element.innerHTML == '') {
+        if (element && element.innerHTML == '') {
             // set counter
             simplyCountdown(`#${elementId}`, {
                 year: timer.date_end.year, // required
@@ -65,26 +65,28 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function setMemoriesSlider() {
-        var splide = new Splide('.splide', {
-            type: 'loop',
-            perMove: 1,
-            gap: '10%',
-            pagination: false,
-            mediaQuery: 'min',
-            breakpoints: {
-                480: {
-                    perPage: 1,
-                },
-                558: {
-                    perPage: 2,
-                },
-                992: {
-                    perPage: 3,
-                },
-            }
-        });
+        if (document.querySelector('.splide')) {
+            var splide = new Splide('.splide', {
+                type: 'loop',
+                perMove: 1,
+                gap: '10%',
+                pagination: false,
+                mediaQuery: 'min',
+                breakpoints: {
+                    480: {
+                        perPage: 1,
+                    },
+                    558: {
+                        perPage: 2,
+                    },
+                    992: {
+                        perPage: 3,
+                    },
+                }
+            });
 
-        splide.mount();
+            splide.mount();
+        }
     }
 
     function init() {

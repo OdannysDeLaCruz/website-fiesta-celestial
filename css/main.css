@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Paytone+One&display=swap");
 @import url("../css/utilities.css");
 
@@ -19,17 +18,34 @@
     font-family: "Poppins" !important;
 }
 
+.btn__inscripciones {
+    padding: 5px 20px;
+    border-radius: 125px;
+    width: 100%;
+}
+.btn__inscripciones:hover {
+    background: var(--color-yellow);
+}
+.btn__inscripciones__link {
+    font-weight: bold;
+}
+
 .container {
     max-width: 1760px;
 }
 
 .landing-header {
-    background-color: var(--color-yellow);
-    padding: 16px;
-    box-shadow: 0px 3px 6px #00000064;
     position: relative;
     z-index: 2;
+    padding: 0px;
 }
+
+.landing-header__wrapper {
+    padding: 16px;
+    background-color: var(--color-yellow);
+    box-shadow: 0px 3px 6px #00000064;
+}
+
 .landing__nav-item {
     color: #000;
     font-size: 14px;
@@ -69,8 +85,9 @@
 }
 
 .landing__line-up__wrapper {
-    min-height: 538px;
+    /* min-height: 538px; */
     background-color: #fff;
+    /* padding: 35px; */
     padding: 35px;
     border-radius: 28px;
 }
@@ -94,12 +111,18 @@
     color: #00b0df;
     margin-bottom: 20px;
 }
+
 .landing__line-up__text {
     font-size: 16px;
     color: #000f32;
     text-align: center;
     font-weight: 300;
     line-height: 30px;
+}
+
+.landing__line-up__wrapper iframe {
+    height: 250px;
+    border-radius: 20px;
 }
 
 /* Coundown */
@@ -123,17 +146,20 @@
 }
 
 .landing__countdown__timer {
-    display: flex;
+    display: grid;
     border-radius: 10px;
-    justify-content: center;
     width: 100%;
     max-width: 800px;
     margin: auto;
-    align-items: center;
-    flex-wrap: wrap;
+    gap: 10px;
     justify-content: space-between;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
 }
 
+.simply-section {
+    width: 100%;
+}
 .simply-section div {
     display: flex;
     padding: 16px;
@@ -143,14 +169,11 @@
     font-weight: bold;
     justify-content: center;
     align-items: center;
-    width: 70px;
+    width: 100%;
     height: 60px;
     border-radius: 8px;
 }
 
-.simply-section:not(:last-child) {
-    margin-right: 10px;
-}
 /* Memories */
 .landing__memories {
     min-height: 350px;
@@ -193,6 +216,9 @@
 /* Socials */
 .landing__socials {
     margin-bottom: 80px;
+}
+.landing__socials .instagram-media {
+    min-width: 1px !important;
 }
 
 .landing__socials__about {
@@ -263,6 +289,10 @@
     max-width: 1195px;
     width: 100%;
     margin-bottom: 64px;
+    font-size: 25px;
+}
+.landing__contact__button:hover {
+    background: rgba(255, 255, 255, 0.7);
 }
 
 .landing__contact__info {
@@ -304,8 +334,64 @@
     color: var(--color-yellow);
 }
 
+/* Pagina inscripciones */
+.categories {
+    padding: 16px;
+}
+.categories__tablist {
+    width: 100%;
+    margin: auto;
+    max-width: 1759px;
+    padding: 16px;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+}
+.categories__tablist__link {
+    border-radius: 15px !important;
+    width: 100%;
+    max-width: 315px;
+    height: 60px;
+    background: #b9b9b9 !important;
+    color: #fff;
+    padding: 10px;
+    font-size: 30px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.categories__tablist__link img {
+    width: 70%;
+}
+
+.categories__tablist__link.active {
+    background: #00b0df !important;
+}
+
+/* Reglamento */
+.accordion {
+    margin: 70px 0;
+    box-shadow: 0px 3px 6px #00000029;
+}
+.accordion-body {
+    font-size: 19px;
+}
+.accordion .accordion-button {
+    font-size: 30px;
+    color: var(--color-space);
+}
+
+.accordion .accordion__subititle {
+    font-size: 25px;
+}
+
+.accordion .accordion__list li::marker {
+    color: #00b0df;
+    font-size: 25px;
+}
+
 /* Footer */
 .landing__footer {
+    margin-top: 80px;
     background: var(--color-yellow);
     padding: 77px 77px 60px 77px;
 }
@@ -319,9 +405,6 @@
 }
 
 @media (min-width: 578px) {
-    .landing__content-principal {
-        position: absolute;
-    }
     .landing__counter {
         height: 500px;
     }
@@ -329,11 +412,19 @@
         width: 1000px;
         height: 400px;
     }
+    .categories__tablist__link {
+        width: 70px;
+        height: 70px;
+    }
 }
 
 @media (min-width: 992px) {
     .landing-header {
         margin-top: 50px;
+        padding: 16px;
+    }
+    .landing-header__wrapper {
+        padding: 16px;
         border-radius: 16px;
     }
     .landing__nav-item {
@@ -345,6 +436,10 @@
     .landing__nav-item button {
         font-size: 20px;
         height: 66px;
+        width: 300px;
+    }
+    .landing__content-principal {
+        position: absolute;
     }
     /* Memories */
     .landing__memories {
@@ -387,6 +482,9 @@
         font-size: 25px;
         margin-bottom: 27px;
     }
+    .landing__line-up__wrapper iframe {
+        height: 350px;
+    }
     /* Socials */
     .landing__socials {
         margin-bottom: 80px;
@@ -397,5 +495,14 @@
     }
     .landing__socials__about p {
         font-size: 25px;
+    }
+    /* Pagina inscripciones */
+    .categories {
+        padding: 40px;
+    }
+    .categories__tablist__link {
+        border-radius: 28px !important;
+        width: 100%;
+        height: 209px;
     }
 }

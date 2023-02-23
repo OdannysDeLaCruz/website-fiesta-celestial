@@ -5,10 +5,16 @@
 .bg-space {
     background-color: var(--color-space);
 }
-
+.text {
+    font-size: 24px;
+    color: var(--color-space);
+    font-family: Helvetica !important;
+    font-weight: 300;
+    line-height: 30px;
+}
 /* Titles */
 .title {
-    font-size: 25px;
+    font-size: 20px;
     font-family: "Paytone One", sans-serif !important;
     text-transform: uppercase;
     font-weight: bold;
