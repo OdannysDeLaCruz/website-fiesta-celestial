@@ -22,27 +22,27 @@
             <!-- Categories -->
             <sdection class="categories">
                 <div class="d-flex align-items-start flex-column">
-                    <div class="nav nav-pills me-3 mx-md-auto gap-2  gap-md-3 gap-lg-5 d-grid categories__tablist"
+                    <div class="nav nav-pills me-3 mx-md-auto gap-2 gap-lg-3 gap-xl-5 d-grid categories__tablist"
                         id="v-pills-tab" role="tablist" aria-orientation="vertical">
                         <button class="nav-link categories__tablist__link active" id="v-pills-inedita-tab"
                             data-bs-toggle="pill" data-bs-target="#v-pills-inedita" type="button" role="tab"
                             aria-controls="v-pills-inedita" aria-selected="true">
                             <span class="d-none d-lg-block">Concurso <br /><strong>Canción inédita</strong></span>
-                            <span class="d-block d-lg-none"><img src="./icons/inedita.png"
+                            <span class="d-block d-lg-none"><img src="./images//icons/inedita.png"
                                     alt="Cancion inedita | Fiesta celestial"></span>
                         </button>
                         <button class="nav-link categories__tablist__link" id="v-pills-agrupacion-tab"
                             data-bs-toggle="pill" data-bs-target="#v-pills-agrupacion" type="button" role="tab"
                             aria-controls="v-pills-agrupacion" aria-selected="false">
                             <span class="d-none d-lg-block">Concurso <br /><strong>Agrupaciones</strong></span>
-                            <span class="d-block d-lg-none"><img src="./icons/agrupacion.png"
+                            <span class="d-block d-lg-none"><img src="./images//icons/agrupacion.png"
                                     alt="Cancion inedita | Fiesta celestial"></span>
                         </button>
                         <button class="nav-link categories__tablist__link" id="v-pills-verseadores-tab"
                             data-bs-toggle="pill" data-bs-target="#v-pills-verseadores" type="button" role="tab"
                             aria-controls="v-pills-verseadores" aria-selected="false">
                             <span class="d-none d-lg-block">Concurso<br /><strong>Verseadores</strong></span>
-                            <span class="d-block d-lg-none"><img src="./icons/versiadores.png"
+                            <span class="d-block d-lg-none"><img src="./images//icons/versiadores.png"
                                     alt="Cancion inedita | Fiesta celestial"></span>
                         </button>
                         <button class="nav-link categories__tablist__link" id="v-pills-infantiles-tab"
@@ -50,14 +50,14 @@
                             aria-controls="v-pills-infantiles" aria-selected="false">
                             <span class="d-none d-lg-block">Concurso <br /><strong>Agrupaciones
                                     infantiles</strong></span>
-                            <span class="d-block d-lg-none"><img src="./icons/infantiles.png"
+                            <span class="d-block d-lg-none"><img src="./images//icons/infantiles.png"
                                     alt="Cancion inedita | Fiesta celestial"></span>
                         </button>
                         <button class="nav-link categories__tablist__link" id="v-pills-talleres-tab"
                             data-bs-toggle="pill" data-bs-target="#v-pills-talleres" type="button" role="tab"
                             aria-controls="v-pills-talleres" aria-selected="false">
                             <span class="d-none d-lg-block"><strong>Talleres</strong></span>
-                            <span class="d-block d-lg-none"><img src="./icons/talleres.png"
+                            <span class="d-block d-lg-none"><img src="./images//icons/talleres.png"
                                     alt="Cancion inedita | Fiesta celestial"></span>
                         </button>
                     </div>
@@ -87,8 +87,8 @@
                                             comercialización y difusión de la música Góspel Vallenata</p>
                                     </div>
                                     <div class="col-12 col-xl-6">
-                                        <img class="w-100 ms-xl-5 mt-sm-3" src="./images/categorias/cancion-inedita.png"
-                                            alt="">
+                                        <img class="w-100 ms-xl-5 mt-sm-3"
+                                            src="./images/categorias/consurso-cancion-inedita.jpg" alt="">
                                     </div>
                                 </article>
 
@@ -116,61 +116,61 @@
 
                                                     <ul class="ps-5 mt-5 accordion__list">
 
-                                                        <li> 1. Se consideran en la categoría profesional los
+                                                        <li> Se consideran en la categoría profesional los
                                                             compositores que hayan grabado una canción de su autoría en
                                                             una producción musical propia o de otro intérprete.</li>
-                                                        <li> 2. En la categoría aficionada podrán participar canciones
+                                                        <li> En la categoría aficionada podrán participar canciones
                                                             inéditas de compositores que no tengan canciones grabadas en
                                                             producciones musicales propias o de otros intérpretes.</li>
-                                                        <li> 3. Los compositores considerados profesionales no podrán
+                                                        <li> Los compositores considerados profesionales no podrán
                                                             participar en la categoría de aficionado</li>
-                                                        <li> 4. Todos los participantes en FIESTA CELESTIAL deben venir
+                                                        <li> Todos los participantes en FIESTA CELESTIAL deben venir
                                                             avalados por una carta pastoral donde se indique que son
                                                             cristianos de buen testimonio (Sin esta carta no hay
                                                             inscripción).</li>
-                                                        <li> 5. Los participantes deben llenar todos los datos del
+                                                        <li> Los participantes deben llenar todos los datos del
                                                             formulario de inscripción; tanto el autor como el que
                                                             interpreta la canción.</li>
-                                                        <li> 6. Las canciones que participaran en el concurso de canción
+                                                        <li> Las canciones que participaran en el concurso de canción
                                                             inédita, deben ser ritmo vallenato en cualquiera de los
                                                             aires establecidos: son, paseo, merengue o puya</li>
-                                                        <li> 7. Las canciones deben contener un mensaje exaltando el
+                                                        <li> Las canciones deben contener un mensaje exaltando el
                                                             nombre de nuestro Señor Jesucristo, proclamando su soberanía
                                                             y sus obras, de igual manera se aceptan canciones con un
                                                             mensaje testimonial dándole la Gloria a DIOS y de </li>
                                                         exaltación a la creación del Señor.
-                                                        <li> 8. Las canciones deben enviarse al correo oficial
+                                                        <li> Las canciones deben enviarse al correo oficial
                                                             fiestacelestial@cejes.com en formato de video o audio con el
                                                             título de la canción y el nombre del compositor, además
                                                             deben anexar la letra de la canción, así como también una
                                                             pequeña biografía del autor. Esta información se tendrá en
                                                             cuenta para el proceso de preselección del concurso.</li>
-                                                        <li> 9. Se hará la preselección de las canciones participantes y
+                                                        <li> Se hará la preselección de las canciones participantes y
                                                             se avisará por un boletín de prensa en nuestra página en
                                                             internet www.cejes.com, también en las cuentas de Instagram
                                                             y Facebook @iglesiacejescentral y grupos de whatsapp.</li>
-                                                        <li> 10. Las canciones deberán ser interpretadas con caja,
+                                                        <li> Las canciones deberán ser interpretadas con caja,
                                                             guacharaca y acordeón. El único complemento que se permite
                                                             de la base musical antes descrita; es la guitarra.</li>
-                                                        <li> 11. Cada agrupación en lo posible debe contar con sus
+                                                        <li> Cada agrupación en lo posible debe contar con sus
                                                             propios instrumentos.</li>
-                                                        <li> 12. No se permiten saludos, ni pregones durante la
+                                                        <li> No se permiten saludos, ni pregones durante la
                                                             interpretación, quienes lo hagan se les descontaran puntos,
                                                             según lo delibere el jurado calificador, en la
                                                             interpretación.</li>
-                                                        <li> 13. No se permiten vestimentas con propagandas comerciales,
+                                                        <li> No se permiten vestimentas con propagandas comerciales,
                                                             ni con logos de patrocinadores, ni con figuras o imágenes de
                                                             ningún tipo, ni publicidad política, así mismo no se
                                                             permitirán leyendas que no sean cristianas, ni
                                                             vestimentas indecorosas.</li>
-                                                        <li> 14. No se permitirán parodias, plagios, ni actuaciones en
+                                                        <li> No se permitirán parodias, plagios, ni actuaciones en
                                                             tarima que copien modelos de la música secular.</li>
-                                                        <li> 1. El participante y su agrupación deben adjuntar
+                                                        <li> El participante y su agrupación deben adjuntar
                                                             certificación de afiliación EPS o Régimen Subsidiado.</li>
-                                                        <li> 15. Adjuntar certificación bancaria a nombre del
+                                                        <li> Adjuntar certificación bancaria a nombre del
                                                             concursante, con el fin entregar premios en el caso de ganar
                                                             en su modalidad.
-                                                            16. Adjuntar Rut impreso actualizado.</li>
+                                                        <li>Adjuntar Rut impreso actualizado.</li>
                                                     </ul>
                                                 </article>
                                             </div>
@@ -205,8 +205,8 @@
                                             vallenata Góspel en los cristianos, Iglesias y eventos seculares.</p>
                                     </div>
                                     <div class="col-12 col-xl-6">
-                                        <img class="w-100 ms-xl-5 mt-sm-3" src="./images/categorias/agrupaciones.png"
-                                            alt="">
+                                        <img class="w-100 ms-xl-5 mt-sm-3"
+                                            src="./images/categorias/concurso-agrupaciones.jpg" alt="">
                                     </div>
                                 </article>
                                 <!-- Reglamenteo -->
@@ -314,8 +314,8 @@
                                             talento que les regaló Dios.</p>
                                     </div>
                                     <div class="col-12 col-xl-6">
-                                        <img class="w-100 ms-xl-5 mt-sm-3" src="./images/categorias/verseadores.png"
-                                            alt="">
+                                        <img class="w-100 ms-xl-5 mt-sm-3"
+                                            src="./images/categorias/concurso-verseadores.jpg" alt="">
                                     </div>
                                 </article>
                                 <!-- Reglamenteo -->
@@ -401,8 +401,7 @@
                                             necesaria para su mejor ejecución.</p>
                                     </div>
                                     <div class="col-12 col-xl-6">
-                                        <img class="w-100 ms-xl-5 mt-sm-3" src="./images/categorias/infantiles.png"
-                                            alt="">
+                                        <img class="w-100 ms-xl-5 mt-sm-3" src="./images/sombrero.png" alt="">
                                     </div>
                                 </article>
                                 <!-- Reglamenteo -->
@@ -437,7 +436,8 @@
                                                             inscripción. Los participantes deben diligenciar todos los
                                                             datos del formulario de inscripción que se podrá descargar
                                                             de la página web <a
-                                                                href="https://www.cejes.com">www.cejes.com</a>.</li>
+                                                                href="https://www.cejes.com">www.cejes.com</a>.
+                                                        </li>
                                                         <li>Las agrupaciones infantiles deben estar conformadas por un
                                                             acordeonero, un cajero y un guacharaquero como mínimo. Se
                                                             permiten todos los instrumentos musicales, adicionales a los
@@ -488,7 +488,7 @@
                                 </div>
 
                                 <!-- Botón de inscripción -->
-                                <button class="btn btn-lg bg-yellow title-space px-4 btn__inscripciones mx-4">
+                                <button class="btn btn-lg bg-yellow title-space px-4 btn__inscripciones">
                                     <a href="https://forms.gle/6bP61Ecz8Q3JyF7j8" target="_blank"
                                         class="text-decoration-none btn__inscripciones__link title title--space">Inscríbete
                                         aquí</a>
